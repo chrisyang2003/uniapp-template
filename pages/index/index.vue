@@ -1,14 +1,7 @@
 <template>
 	<view class="content">
-		<u-navbar title="首页"></u-navbar>
-		<view>123</view>
-		<view>123</view>
-		<view>123</view>
-		<view>123</view>
-		<view>123</view>
-		<view>123</view>
-		<view>123</view>
-		<view>{{theme.bgColor}}</view>
+		<m-navbar title="首页"></m-navbar>
+
 	</view>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-	<view class="">
+	<view>
 		<m-navbar title="登录"></m-navbar>
 		<view class="login">
 			<view>
@@ -21,7 +21,7 @@
 			</view>
 			<view style="margin-top: 50rpx; color: #909399; float: right;" @click="goPage('/pages/login/register')">注册账号</view>
 		</view>
-	</view>
+		<!-- <u-toast ref="uToast"></u-toast> -->
 	</view>
 </template>
 
@@ -37,11 +37,12 @@
 		},
 		methods: {
 			async goLogin(){
-				return
-				let res = await this.$api.mobilelogin(this.form);
-				if (!res.code) {
+				let res = await this.$api.goLogin(this.form);
+				if (res.code == 200) {
 					this.$u.toast(res.msg);
 					return;
+				}else{
+					this.$u.toast(res.msg)
 				}
 				// this.$u.vuex('vuex_token', res.data.token);
 				// this.$u.vuex('vuex_user', res.data.user || {});

@@ -30,12 +30,6 @@ module.exports = (vm) => {
 		const data = res.data
 		const code = res.data.code
 
-		switch(code){
-			case 401:
-				vm.$u.toast("需要登陆")
-			
-
-		}
 		
 		return data
 
