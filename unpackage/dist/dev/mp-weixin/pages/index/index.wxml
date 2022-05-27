@@ -1,0 +1,1 @@
+<view class="content"><u-navbar vue-id="8dd740cc-1" title="首页" bind:__l="__l"></u-navbar><view>123</view><view>123</view><view>123</view><view>123</view><view>123</view><view>123</view><view>123</view><view>{{theme.bgColor}}</view></view>

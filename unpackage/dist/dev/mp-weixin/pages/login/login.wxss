@@ -1,0 +1,11 @@
+
+.login {
+	padding: 200rpx 100rpx 0 100rpx;
+}
+.other {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 40rpx;
+}
+
